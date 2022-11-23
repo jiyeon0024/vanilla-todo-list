@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+
+body{
+    
+    height: 100vh;
+    background: url(https://wallpapersmug.com/large/3bcbc6/digital-art-neon-bubbles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.wrap{
+    background: rgba(151, 150, 150, 0.397);
+    width: 700px;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 60px 10px 60px 10px;
+}
+
+input,button{
+    border: none;
+    outline: none;
+}
+
+
+.inputWrap{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    width: max-content;
+    margin:20px auto;
+}
+
+.todos{
+    width: 500px;
+    margin-right: 20px;
+    font-weight: bold;
+    
+}
+.todos:focus{
+    border: 2px solid rgb(175, 233, 201);
+    
+}
+
+.todo-input-area>input{
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.438);
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.submitBtn{
+    width: 50px;
+    text-align: center;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.438);
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submitBtn:hover{
+    color: rgb(175, 233, 201);
+}
+
+.todoList{
+    width: 580px;
+    margin: 0 auto;
+    background:rgba(0, 0, 0, 0.438);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+/*taskList input area*/
+.tasks{
+    margin-left: 50px;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 5px 10px;
+}
