@@ -86,10 +86,12 @@ input,button{
 }
 
 .todoList{
-    width: 450px;
+    width: 550px;
     background:rgba(0, 0, 0, 0.438);
     border-radius: 10px;
     padding: 10px;
+    margin: 10px;
+    
 }
 
 
@@ -103,8 +105,8 @@ input,button{
 }
 
 .listWrap{
-    display: flex;
-    flex-direction: row;
+    display: block;
+    /* flex-direction: row; */
     width:max-content;
     margin: 0 auto;
 }
@@ -122,4 +124,7 @@ input,button{
     border: 1px solid lightblue;
    
   
+}
+li{
+    list-style: none;
 }
