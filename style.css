@@ -109,6 +109,8 @@ input,button{
     /* flex-direction: row; */
     width:max-content;
     margin: 0 auto;
+    height: 410px;
+    overflow: hidden;
 }
 
 .complete,.delete{

@@ -23,7 +23,6 @@ function AddTodo(e){
     Todos.value="";
     list.classList.add("todoList");
     List.appendChild(list);
-    console.log("btn")
    
 }
 
