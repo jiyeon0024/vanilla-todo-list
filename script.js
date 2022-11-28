@@ -16,13 +16,17 @@ SubmitBtn.addEventListener("click",AddTodo);
 function AddTodo(e){
     e.preventDefault();
 
-    // const todoDiv = document.createElement("div");
-    // todoDiv.classList.add("listWrap")
-    const list = document.createElement("li");
-    list.innerText = Todos.value;
-    Todos.value="";
-    list.classList.add("todoList");
-    List.appendChild(list);
+    if(Todos.value.length!=0){
+
+        const list = document.createElement("li");
+        list.innerText = Todos.value;
+        Todos.value="";
+        list.classList.add("todoList");
+        List.appendChild(list);
+    }else{
+        alert("Enter your task");
+    }
+
    
 }
 
