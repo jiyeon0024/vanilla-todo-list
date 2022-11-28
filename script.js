@@ -9,7 +9,7 @@ const List= document.querySelector(".listWrap");
 
 
 SubmitBtn.addEventListener("click",AddTodo);
-// ListWrap.addEventListener("click",TodoLists-btn);
+List.addEventListener("click",TodoListsBtn);
 
 
 
@@ -38,8 +38,23 @@ function AddTodo(e){
 
     }else{
         alert("Enter your task");
-    }
 
+    }
    
 }
+
+
+//
+ function TodoListsBtn(e){
+    const item = e.target;
+    if(item.classList[0]==="delete"){
+        const todo = item.previousSibling;
+        todo.remove();
+    }
+    console.log(item.previousSibling);
+    }
+
+
+
+
 
