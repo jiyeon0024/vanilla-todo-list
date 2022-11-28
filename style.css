@@ -86,11 +86,12 @@ input,button{
 }
 
 .todoList{
-    width: 550px;
+    width: 472px;
     background:rgba(0, 0, 0, 0.438);
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
+    display: inline-flex;
     
 }
 
@@ -106,19 +107,28 @@ input,button{
 
 .listWrap{
     display: block;
-    /* flex-direction: row; */
-    width:max-content;
+    width:650px;
     margin: 0 auto;
-    height: 410px;
+    height: 420px;
     overflow: hidden;
+    padding: 10px;
+   
 }
+
 
 .complete,.delete{
     background:rgba(0, 0, 0, 0.438);
     border-radius: 10px;
-    padding: 10px;
+    /* padding: 1px; */
     margin-left: 7px;
     font-weight: bold;
+    height: 40px;
+    margin-top: 10px;
+    width: 60px;
+}
+
+.complete{
+    margin-left: 1px;
 }
 
 .complete:hover,.delete:hover{

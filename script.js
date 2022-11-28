@@ -23,6 +23,19 @@ function AddTodo(e){
         Todos.value="";
         list.classList.add("todoList");
         List.appendChild(list);
+
+        const Complete_Btn = document.createElement("button");
+        const Del_btn = document.createElement("button");
+
+        Complete_Btn.classList.add("complete");
+        Complete_Btn.innerText="Done"
+        Del_btn.classList.add("delete");
+        Del_btn.innerText="Delete"
+        List.appendChild(Complete_Btn);
+        List.appendChild(Del_btn);
+
+
+
     }else{
         alert("Enter your task");
     }
